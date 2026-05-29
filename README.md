@@ -24,7 +24,7 @@
     <sup>3</sup> UW–Madison
     <br>
     <sup>4</sup> UIUC &nbsp;
-    <sup>5</sup> Mila – Quebec AI Institute
+    <sup>5</sup> Mila–Quebec AI Institute
   </p>
 
   <p>
