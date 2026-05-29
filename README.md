@@ -36,9 +36,6 @@
       <img src="https://img.shields.io/badge/arXiv-2602.05400-B31B1B?style=flat-square&logo=arxiv" alt="arXiv">
     </a>
     <a href="https://huggingface.co/papers/2602.05400">
-      <img src="https://img.shields.io/badge/%F0%9F%A4%97%20Hugging%20Face-Paper-FFD21E?style=flat-square" alt="Hugging Face">
-    </a>
-    <a href="https://huggingface.co/papers/2602.05400">
       <img src="https://img.shields.io/badge/%F0%9F%A4%97%20Daily%20Paper-Day%201-FF6B6B?style=flat-square" alt="Daily Paper">
     </a>
     <a href="https://github.com/gszfwsb/OPUS">
@@ -55,16 +52,7 @@
 
 ## Overview
 
-OPUS is an **online data selection** method for large language model pre-training that actively selects high-quality, diverse training batches at **every training iteration**. Unlike static filtering, OPUS dynamically scores each candidate example using preconditioned gradient inner products against a small proxy validation set, then applies a diversity-aware stochastic selection to avoid redundancy.
-
-### Key Features
-
-- **Online Selection** — Data quality scoring happens in the training loop, not as a pre-processing step.
-- **Optimizer-Aware** — Supports multiple preconditioners: AdamW, Muon, and SGD.
-- **Diversity-Aware** — Stochastic selection with redundancy penalty via candidate-candidate similarity.
-- **Low Overhead** — Optional random projection compresses gradients while preserving selection quality.
-- **Multi-Architecture** — GPT-2, Llama-3.x, and Qwen3 support with HuggingFace-compatible checkpoints loading.
-- **Distributed** — Single-node and multi-node training via `torchrun` with `torch.compile` optimization.
+As high-quality public text approaches exhaustion, a phenomenon known as the Data Wall, pre-training is shifting from more tokens to better tokens. However, existing methods either rely on heuristic static filters that ignore training dynamics, or use dynamic yet optimizer-agnostic criteria based on raw gradients. We propose \textbf{OPUS} (Optimizer-induced Projected Utility Selection), a dynamic framework that defines utility in the optimizer-induced update space. OPUS scores candidates by projecting their effective updates, shaped by modern optimizers, onto a target direction derived from a stable, in-distribution proxy. To ensure scalability, we employ Ghost technique with CountSketch for computational efficiency, and Boltzmann sampling for data diversity, incurring only 4.7\% additional compute overhead. OPUS achieves remarkable results across diverse corpora, quality tiers, optimizers, and model scales. It also outperforms previous data selection methods across different stages of training, including from-scratch pre-training and also mid-training. Beyond online selection, the OPUS utility score also demonstrates potential as a static filter for flagging and removing toxic documents from contaminated training corpora prior to training.
 
 ---
 
