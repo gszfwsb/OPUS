@@ -41,7 +41,7 @@
     <a href="https://huggingface.co/papers/2602.05400">
       <img src="https://img.shields.io/badge/%F0%9F%A4%97%20Daily%20Paper-Day%201-FF6B6B?style=flat-square" alt="Daily Paper">
     </a>
-    <a href="https://github.com/yancyou/OPUS">
+    <a href="https://github.com/gszfwsb/OPUS">
       <img src="https://img.shields.io/badge/Code-GitHub-181717?style=flat-square&logo=github" alt="Code">
     </a>
     <img src="https://img.shields.io/badge/License-MIT-green?style=flat-square" alt="License">
@@ -55,7 +55,7 @@
 
 ## Overview
 
-OPUS is an **online data selection** method for large language model pre-training that actively selects high-quality, diverse training batches at **every training iteration**. Unlike static filtering, OPUS dynamically scores each candidate example using preconditioned gradient inner products against a small proxy validation set, then applies a diversity-aware stochastic selection to avoid redundancy. An optional random projection step reduces computational overhead to near-zero.
+OPUS is an **online data selection** method for large language model pre-training that actively selects high-quality, diverse training batches at **every training iteration**. Unlike static filtering, OPUS dynamically scores each candidate example using preconditioned gradient inner products against a small proxy validation set, then applies a diversity-aware stochastic selection to avoid redundancy.
 
 ### Key Features
 
@@ -74,7 +74,7 @@ OPUS is an **online data selection** method for large language model pre-trainin
 
 ```bash
 # 1. Clone the repository
-git clone https://github.com/yancyou/OPUS.git
+git clone https://github.com/gszfwsb/OPUS.git
 cd OPUS
 
 # 2. Create environment
