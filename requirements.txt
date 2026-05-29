@@ -1,0 +1,17 @@
+# Core training + data selection
+numpy>=1.24.0
+torch>=2.4.0
+tqdm>=4.65.0
+huggingface-hub>=0.20.0
+datasets>=2.14.0
+tiktoken>=0.7.0
+wandb>=0.16.0
+
+# Data pipeline (BETR proxy construction, tokenization)
+transformers>=4.38.0
+pyarrow>=14.0.0
+
+# Optional: only needed for evaluation / proxy retrieval
+# faiss-gpu>=1.7.4
+# vllm>=0.4.0
+# tenacity>=8.2.0

@@ -1,0 +1,29 @@
+data/fineweb10B/
+baselines/
+
+# OS / editor cruft
+.DS_Store
+.vscode/
+
+# Third-party eval harness (install separately: `pip install opencompass`)
+opencompass/
+
+# Python cache and build artifacts
+__pycache__/
+*.py[cod]
+
+# Training/eval outputs
+logs/
+outputs/
+opencompass/outputs/
+wandb/
+.cache/
+bins/
+
+# Dataset manifests and local staging
+download_manifest.json
+local_batches_manifest.json
+fineweb_200B_parquet/
+fineweb_200B_parquet_betr/
+finewebedu/
+fineweb_caching/
