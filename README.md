@@ -308,16 +308,6 @@ Please refer to our [paper](https://arxiv.org/abs/2602.05400) for detailed resul
 
 ---
 
-## Hugging Face Hub
-
-We provide templates and guides for publishing OPUS-trained checkpoints to the Hugging Face Hub.
-
-- **[Model Card Template](huggingface/README_TEMPLATE.md)** — Ready-to-use `README.md` for your Hub model repository.
-- **[Upload Guide](huggingface/PUSH_GUIDE.md)** — Step-by-step instructions for converting checkpoints and pushing to `huggingface.co`.
-
-After uploading, link your model to the [paper page](https://huggingface.co/papers/2602.05400) for discoverability.
-
----
 
 ## Acknowledgments
 
