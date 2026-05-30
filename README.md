@@ -54,7 +54,8 @@
 
 As high-quality public text approaches exhaustion, a phenomenon known as the Data Wall, pre-training is shifting from more tokens to better tokens. However, existing methods either rely on heuristic static filters that ignore training dynamics, or use dynamic yet optimizer-agnostic criteria based on raw gradients. We propose OPUS (Optimizer-induced Projected Utility Selection), a dynamic framework that defines utility in the optimizer-induced update space. OPUS scores candidates by projecting their effective updates, shaped by modern optimizers, onto a target direction derived from a stable, in-distribution proxy. To ensure scalability, we employ Ghost technique with CountSketch for computational efficiency, and Boltzmann sampling for data diversity, incurring only 4.7\% additional compute overhead. OPUS achieves remarkable results across diverse corpora, quality tiers, optimizers, and model scales. It also outperforms previous data selection methods across different stages of training, including from-scratch pre-training and also mid-training. Beyond online selection, the OPUS utility score also demonstrates potential as a static filter for flagging and removing toxic documents from contaminated training corpora prior to training.
 
-![Uploading image.png…]()
+<img width="1062" height="382" alt="image" src="https://github.com/user-attachments/assets/89359ca5-774c-4065-939a-1f602e6f2f1b" />
+
 
 
 ---
